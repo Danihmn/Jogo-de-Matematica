@@ -1,0 +1,210 @@
+*{
+    /* Resetando o CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+}
+
+body{
+    background-color:beige;
+}
+
+#textoMensagem{
+    /* Modificando o texto de mensagem */
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: darkblue;
+}
+
+#tabuadas {
+    /* Ajustando as tabuadas no meio da tela, em linhas e colunas */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-image: url("../IMG/telaNiveis.png");
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    padding: 8rem;
+}
+
+.btnTabuada{
+    /* Alterando a margem e tamanho dos botões */
+    padding: 1.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-image: url("../IMG/bolha.png"); /* Caminho da imagem */
+    background-size: contain; /* Ajusta a imagem para caber no botão */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no botão */
+    background-color: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Define a cor do texto */
+    font-size: 3rem;
+    font-weight: 700;
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: transform 0.1s ease; /* Transição suave para o tamanho */
+}
+
+.btnTabuada:hover{
+    /* Quando o botão é passado, aumenta suavemente o tamanho do botão */
+    transform: scale(1.2);
+}
+
+.btnTabuada:active{
+    /* Quando o botão é clicado, diminue suavemente o tamanho do botão */
+    transform: scale(1);
+}
+
+#conta{
+    /* Posicionando a conta no centro da página */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.perguntinha{
+    /* Alterando a margem e tamanho dos botões */
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    background-image: url("../IMG/bolha.png"); /* Caminho da imagem */
+    background-size: contain; /* Ajusta a imagem para caber no botão */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no botão */
+    background-color: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Define a cor do texto */
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#sinalVezes{
+    /* Modificando a aparência do sinal de vezes */
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: 800;
+    color: darkblue;
+}
+
+#sinalIgual{
+    /* Modificando a aparência do sinal de igual */
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: 800;
+    color: darkblue;
+}
+
+#escolhas{
+    /* Modificando a posição das alternativas */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#parte1{
+    /* Modificando a posição das alternativas */
+    display: flex;
+    flex-direction: column;
+}
+
+#parte2{
+    /* Modificando a posição das alternativas */
+    display: flex;
+    flex-direction: column;
+}
+
+.alternativa{
+    /* Alterando a margem e tamanho dos botões */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    padding: 2rem;
+    background-image: url("../IMG/pedra.png"); /* Caminho da imagem */
+    background-size: contain; /* Ajusta a imagem para caber no botão */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no botão */
+    background-color: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Define a cor do texto */
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: transform 0.1s ease; /* Transição suave para o tamanho */
+}
+
+.alternativa:hover{
+    /* Quando o botão é passado, aumenta suavemente o tamanho do botão */
+    transform: scale(1.2);
+}
+
+.alternativa:active{
+    /* Quando o botão é clicado, diminue suavemente o tamanho do botão */
+    transform: scale(1);
+}
+
+#questao{
+    /* Ajustando as questoes no meio da tela, em linhas e colunas */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-image: url("../IMG/telaJogo.png");
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    padding: 6rem;
+}
+
+.opacidade-reduzida{
+    opacity: 10;
+}
+
+#btnVoltar{
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 30px;
+    background-image: url("../IMG/btnJogarBolha.png"); /* Caminho da imagem */
+    background-size: contain; /* Ajusta a imagem para caber no botão */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no botão */
+    background-color: transparent; /* Define o fundo como transparente */
+    padding: 2rem;
+    display: inline-block;
+    transition: transform 0.1s ease; /* Transição suave para o tamanho */
+    color: white;
+}
+
+#btnVoltar:hover{
+    /* Quando o botão é passado, aumenta suavemente o tamanho do botão */
+    transform: scale(1.2);
+}
+
+#btnVoltar:active{
+    /* Quando o botão é clicado, diminue suavemente o tamanho do botão */
+    transform: scale(1);
+}
+
+/* Caso a tela seja a de um celular */
+@media (max-width: 640px){
+    #tabuadas {
+        /* Ajustando as tabuadas no meio da tela, em linhas e colunas */
+        position: static;
+        transform: none;
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+
+    .btnTabuada{
+        /* Alterando a margem e tamanho dos botões */
+        margin: 0.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}

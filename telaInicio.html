@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Math</title>
+    <link rel="shortcut icon" href="IMG/fundoDoMar.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styleJogo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+    </style>
+</head>
+<body>
+    <div id="jogar">
+        <input type="button" id="btnJogar">
+    </div>
+    <div id="tabuadas"> <!-- Início div tabuadas -->
+        <div id="ajustarColunasTabuadas">
+            <div id="ajustarLinhasTabuadas1">
+                <input type="button" class="btnTabuada" id="1" value="1">
+                <input type="button" class="btnTabuada" id="2" value="2">
+                <input type="button" class="btnTabuada" id="3" value="3">
+            </div>
+            <div id="ajustarLinhasTabuadas2">
+                <input type="button" class="btnTabuada" id="4" value="4">
+                <input type="button" class="btnTabuada" id="5" value="5">
+                <input type="button" class="btnTabuada" id="6" value="6">
+            </div>
+            <div id="ajustarLinhasTabuadas3">
+                <input type="button" class="btnTabuada" id="7" value="7">
+                <input type="button" class="btnTabuada" id="8" value="8">
+                <input type="button" class="btnTabuada" id="9" value="9">
+            </div>
+            <input type="button" class="btnTabuada" id="10" value="10">
+        </div>
+    </div> <!-- Fim div tabuadas -->
+    <div id="questao"> <!-- Início div questao -->
+        <p id="textoMensagem"></p>
+        <div id="conta">
+        <p id="perguntaNumero1" class="perguntinha"></p>
+        <p id="sinalVezes"></p>
+        <p id="perguntaNumero2" class="perguntinha"></p>
+        <p id="sinalIgual"></p>
+        </div>
+        <div id="escolhas">
+            <div id="parte1">
+                <div class="resposta">
+                    <!-- Atribuindo o value vazio para definí-lo no JS -->
+                    <input type="button" class="alternativa" id="escolha1" value="">
+                </div>
+                <div class="resposta">
+                    <!-- Atribuindo o value vazio para definí-lo no JS -->
+                    <input type="button" class="alternativa" id="escolha2" value="">
+                </div>
+            </div>
+            <div id="parte2">
+                <div class="resposta">
+                    <!-- Atribuindo o value vazio para definí-lo no JS -->
+                    <input type="button" class="alternativa" id="escolha3" value="">
+                </div>
+                <div class="resposta">
+                    <!-- Atribuindo o value vazio para definí-lo no JS -->
+                    <input type="button" class="alternativa" id="escolha4" value="">
+                </div>
+            </div>
+        </div>
+        <a href="index.html" target="_self" id="btnVoltar">Voltar para o início</a>
+    </div> <!-- Fim div questao -->
+    <!-- Adiciona o elemento de áudio sem controles visíveis -->
+    <audio autoplay loop style="display:none;">
+        <source src="SND/Where's My Water - Theme Song.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <script src="JS/script.js"></script>
+</body>
+</html>

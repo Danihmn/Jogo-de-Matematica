@@ -1,0 +1,40 @@
+*{
+    /* Resetando o CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:beige;
+}
+
+#posicaoBtnJogar{
+    /* Ajustando a posição do fundo */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../IMG/telaInicial.png");
+    background-size: contain; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    padding: 20rem;
+}
+
+#btnJogar{
+    /* Modificando a posiçao do botão de jogar */
+    transform: translate(+40%, +80%);
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-image: url("../IMG/btnJogar.png");
+    background-size: contain; /* Faz a imagem reduzir para caber */
+    width: 190px;
+    height: 90px;
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+}
